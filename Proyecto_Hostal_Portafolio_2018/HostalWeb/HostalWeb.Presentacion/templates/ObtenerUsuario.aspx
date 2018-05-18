@@ -10,8 +10,8 @@
         .auto-style1 {
             margin-left: 282px;
         }
-        .auto-style2 {
-            margin-left: 393px;
+        .auto-style3 {
+            width: 102px;
         }
     </style>
 </head>
@@ -24,7 +24,15 @@
         <br />
         <table style="width:100%;">
             <tr>
+                <td class="auto-style3">
+                    <ul><li><a href="../index.aspx">index</a></li></ul>
+                </td>
+                <td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
                 <td>
                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" CssClass="auto-style1" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
@@ -48,15 +56,9 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
                 <td>
-                    <ul><li><a href="../index.aspx">index</a></li></ul>
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
