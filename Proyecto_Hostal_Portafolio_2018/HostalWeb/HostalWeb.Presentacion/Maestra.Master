@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra.Master.cs" Inherits="HostalWeb.Presentacion.Inicio" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Web Hostal Doña Clarita</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/menu-style.css"/>
+    <style type="text/css">
+        .auto-style1 {
+            width: 113px;
+            height: 116px;
+        }
+        .auto-style2 {
+            height: 52px;
+        }
+        </style>
+     
+</head>
+<body class="container">
+    <form id="form1" runat="server">
+    <header>
+        <div id="menu"> 
+     <nav>
+        <ul class="auto-style2">
+           
+           
+            <li>
+                <a href="../index.aspx">Inicio</a>
+            </li>
+            <li>
+                <a href="../moduloClientes.aspx">Clientes</a>
+            </li>
+            <li>
+                <a href="../moduloHostal.aspx">Administración de Hostal</a>
+            </li>
+             <li>
+                 <a href="../moduloProveedores.aspx">Proveedores</a>
+            </li>
+        </ul>
+    </nav>
+              </div>
+        <h1>
+                <a ¨href="../index.aspx">
+                                <img src="img/logo.png" alt="Imagen de Logotipo Hostal" class="auto-style1"/>
+                         </a>
+                           &nbsp;Hostal Doña Clarita
+        </h1>
+        
+        
+    </header>
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#666666" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#1C5E55" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#1C5E55" />
+        </asp:SiteMapPath>
+        
+    <main>
+        <br />
+        <asp:LoginName ID="LoginName1" runat="server" FormatString="Bienvenido/a, {0}" />
+        <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../templates/RegistroEmpresa.aspx">Registrarse</a>
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+        </asp:ContentPlaceHolder>
+     </main>
+
+  </form>
+    <footer>
+        Hostal Doña Clarita
+        - 2018</footer>
+
+</body>
+    
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="940ead64-0205-4d96-bc3b-f4c22dc75c77" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58728/Hostal.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Hostal.xsd" MetadataType="Schema" ID="54171bf1-6dc1-42e5-af59-10344930a508" SourceId="1" SourceUrl="http://localhost:58728/Hostal.svc?xsd=xsd2" />
+    <MetadataFile FileName="Hostal1.xsd" MetadataType="Schema" ID="f12a6ca5-4780-4202-818c-3bcf2a917495" SourceId="1" SourceUrl="http://localhost:58728/Hostal.svc?xsd=xsd1" />
+    <MetadataFile FileName="Hostal.disco" MetadataType="Disco" ID="c7e179bd-cdd0-4bb7-ab90-427521b2c984" SourceId="1" SourceUrl="http://localhost:58728/Hostal.svc?disco" />
+    <MetadataFile FileName="Hostal.wsdl" MetadataType="Wsdl" ID="2ef2e2ad-165c-4c6a-9992-80582e8aedfa" SourceId="1" SourceUrl="http://localhost:58728/Hostal.svc?wsdl" />
+    <MetadataFile FileName="Hostal2.xsd" MetadataType="Schema" ID="5479e79f-2cea-41a6-a045-1c9e2942863d" SourceId="1" SourceUrl="http://localhost:58728/Hostal.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

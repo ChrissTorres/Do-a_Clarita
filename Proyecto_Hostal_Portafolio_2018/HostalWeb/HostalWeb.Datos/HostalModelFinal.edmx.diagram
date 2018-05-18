@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fc46bd23f3574a03aea74a7168dd9c72" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="HostalModel.EMPLEADO" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.EMPRESA" Width="1.5" PointX="7.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.FACTURA" Width="1.5" PointX="9.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.FAMILIA_PRODUCTO" Width="1.5" PointX="5.25" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.HABITACION" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.HABITACION_FACTURA" Width="1.5" PointX="12" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.HABITACION_ORDEN_COMPRA" Width="1.5" PointX="18" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.HUESPED" Width="1.5" PointX="7.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.MINUTA" Width="1.5" PointX="15" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.MINUTA_PLATO" Width="1.5" PointX="17.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.ORDEN_COMPRA" Width="1.5" PointX="12.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.ORDEN_PEDIDO" Width="1.5" PointX="7.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.ORDEN_PEDIDO_PRODUCTO" Width="1.5" PointX="9.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.PLATO" Width="1.5" PointX="15" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.PRODUCTO" Width="1.5" PointX="7.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.PROVEEDOR" Width="1.5" PointX="10.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.RUBRO" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.SERVICIO" Width="1.5" PointX="12.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.SERVICIO_FACTURA" Width="1.5" PointX="15" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.SERVICIO_ODEN_COMPRA" Width="1.5" PointX="15" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.TIPO_PRODUCTO" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.TIPO_USUARIO" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.TRABAJADOR" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HostalModel.USUARIO" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="HostalModel.ORDEN_PEDIDO_EMPLEADO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.USUARIO_EMPLEADO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.EMPRESA_TRABAJADOR_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.FACTURA_EMPRESA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.HABITACION_FACTURA_FACTURA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.SERVICIO_FACTURA_FACTURA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.PRODUCTO_FAMILIA_PRODUCTO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.HABITACION_FACTURA_HAB_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.HUESPED_HABITACION_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.ORDEN_COMPRA_HABITACION_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.HAB_ORDEN_ORDEN_COMPRA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.HUESPED_TRABAJADOR_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.MINUTA_PLATO_MINUTA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.MINUTA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.MINUTA_PLATO_PLATO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.SERV_COMPRA_ORDEN_COMPRA_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.ORDEN_PEDIDO_PROVEEDOR_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.ORDEN_PRODUCTO_ORDEN_PEDIDO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.ORDEN_PRODUCTO_PRODUCTO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.PRODUCTO_TIPO_PRODUCTO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.PROVEEDOR_RUBRO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.USUARIO_PROVEEDOR_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.SERVICIO_COMPRA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.SERVICIO_FACTURA_SERVICIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.USUARIO_TIPO_USUARIO_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="HostalModel.USUARIO_TRABAJADOR_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
