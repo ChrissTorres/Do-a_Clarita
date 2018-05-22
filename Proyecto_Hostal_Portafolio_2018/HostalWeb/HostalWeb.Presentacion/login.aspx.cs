@@ -1,5 +1,5 @@
 ﻿using HostalWeb.Negocio;
-using Oracle.ManagedDataAccess.Client;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Oracle.DataAccess.Client;
 //using System.Data.OracleClient;
 using HostalWeb.Presentacion.ServiceReference1;
 namespace HostalWeb.Presentacion
@@ -22,23 +23,28 @@ namespace HostalWeb.Presentacion
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            OracleCommand comando = new OracleCommand("SELECT NOMBRE FROM USUARIO WHERE NOMBRE = :usuario AND CONTRASENA = :contra", conexion);
+            OracleCommand comando = new OracleCommand("SELECT * FROM USUARIO WHERE NOMBRE = :usuario AND CONTRASENA = :contra", conexion);
             comando.Parameters.Add(":usuario", txtUser.Text);
             comando.Parameters.Add(":contra", txtPass.Text);
-            //Response.Redirect("index.aspx");
-            User user = new User();
-            if (user.Authenticate())
-            {
-                Response.Redirect("index.aspx");
-            }
-            //OracleDataReader lector = comando.ExecuteReader();
-            //if (lector.Read())
-            //{
-          
-            //    conexion.Close();
 
-            //}
+            OracleDataReader lector = comando.ExecuteReader();
+            if (lector.Read())
+            {
+                if (lector["TIPO_USUARIO_ID"].ToString() == "1")
+                {
+                    Server.Transfer("index.aspx");
+                    conexion.Close();
+                }
+                
+            }
+            //Response.Redirect("index.aspx");
+            //User user = new User();
+            //if (user.Authenticate())
+            //{
+            //    Response.Redirect("index.aspx");
         }
+        
+}
 
 
         //private void GetSearchLogin()
@@ -88,9 +94,8 @@ namespace HostalWeb.Presentacion
         //    }
         //}
 
-        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
-        {
+        //protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        //{
 
-        }
+        //}
     }
-}
